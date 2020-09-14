@@ -1,0 +1,7 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 35px;
+    text-decoration: none;
+  }
