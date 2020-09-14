@@ -1,0 +1,11 @@
+img{
+    width: 10%;
+    height: 10%
+}
+
+.experience-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}

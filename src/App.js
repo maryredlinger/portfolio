@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './styles/Home.css'
-import './styles/About.css'
 import './styles/Nav.css'
 
 

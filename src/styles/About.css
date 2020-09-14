@@ -2,3 +2,26 @@
     align-items: center;
     text-align: center;
 }
+
+.that-font{
+    font-family: 'Inconsolata', monospace;
+}
+
+img{
+    max-width: 90%;
+    max-height: auto;
+}
+
+.img-container{
+    width: 50%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.text-container{
+    width: 50%;
+}

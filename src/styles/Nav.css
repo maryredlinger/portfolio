@@ -1,7 +1,15 @@
 .navigation {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 35px;
     text-decoration: none;
+    align-items: baseline;
+    font-family: 'Inconsolata', monospace;
+
+  }
+
+  .nav-current{
+      font-size: 25px;
   }
