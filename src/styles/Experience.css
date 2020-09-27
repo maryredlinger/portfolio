@@ -14,8 +14,8 @@
 
 
 .other img{
-    width: 20vw;
-    height: 10vw;
+    width: 35vw;
+    height: 25vw;
 }
 .experience-container{
     display: flex;
@@ -34,7 +34,7 @@
 .experience-flex{
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -46,3 +46,58 @@
     margin: 5px 5px 5px 5px;
    font-family: 'Indie Flower', cursive;
 }
+
+.boxPopup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 50px 50px 50px 50px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: auto; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); 
+    color: ivory;
+}             
+.open-button {
+    background-color: #1c87c9;
+    color: white;
+    padding: 12px 20px;
+    font-size: 100PX;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+}
+/* Hide Popup*/
+.form-popup {           
+    z-index: 9;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-x:scroll;
+    margin: 0 auto;
+}   
+
+.close{
+    color: ivory;
+    
+}
+/*}
+.close {
+    color: #aaa;
+    float: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }*/
