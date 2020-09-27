@@ -17,6 +17,13 @@
     width: 35vw;
     height: 25vw;
 }
+
+.popup img{
+    width: 20vw;
+    height: 20vw;
+    margin-left: 10px;
+}
+
 .experience-container{
     display: flex;
     flex-wrap: nowrap;
@@ -57,7 +64,6 @@
     padding: 50px 50px 50px 50px;
     left: 0;
     top: 0;
-    width: 100%; 
     height: auto; 
     overflow: auto; 
     background-color: rgba(0,0,0,0.9); 
