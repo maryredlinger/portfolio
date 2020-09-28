@@ -28,6 +28,8 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .show-flex{
@@ -107,3 +109,388 @@
     text-decoration: none;
     cursor: pointer;
   }*/
+
+  .ath{
+      /*background-color: rgb(34,139,34, 0.6) ;*/
+      background-color: rgb(0,0,0, 0.8);
+      position: absolute;
+      height: 20vw;
+      width: 25vw;
+      border-radius: 25px;
+      background-size: contain;
+  }
+  
+  .back_ath{
+    background-image: url("/athanasius.png");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+  }
+  .back_walk{
+    background-image: url("/walk_in_hope.png");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+  }
+  .back_sosl{
+    background-image: url("/sosl.png");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+  }
+
+  .back_ride{
+    background-image: url("/ride-for-life.png");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+  }
+  .back_stellar{
+    background-image: url("/shf.png");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+  }
+  .back_hidden{
+    background-image: url("/hidden_gems.png");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+  }
+  .back_tictac{
+    background-image: url("/tic_tac.png");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 25vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+  }
+  .back_mercy{
+    background-image: url("/divine.png");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+    height: 20vw;
+    width: 25vw;
+  }
+  .back_alert{
+    background-image: url("/alert.gif");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+    height: 20vw;
+    width: 25vw;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+  .ath_description{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.8);
+    color: #fff;
+    opacity: 0;
+    color: ivory;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 25px;
+    padding-top: 10%;
+
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+  }
+  .ath_initial{
+    color: blanchedalmond;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 25%;
+    transition: opacity .1s, visibility .1s;
+  }
+  .ath:hover .ath_description{
+    visibility: visible;
+    opacity: 8;
+}
+
+.description{
+    padding-bottom: 15px;
+}
+.button{
+    background: none;
+    border: 2px solid wheat;
+    border-radius: 25px;
+    padding: 10px;
+    color: wheat;
+    margin: 5px;
+    font-size: 1vw;
+    text-decoration: none;
+}
+.ath:hover .ath_button{
+    visibility: visible;
+}
+.ath:hover .ath_initial{
+    visibility: hidden;
+}
+
+.font{
+    font-size: 1.8vw;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .back_alert{
+        background-image: url("/alert.gif");
+        margin-bottom: 10px;
+        margin-left: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+        background-repeat:no-repeat;
+        border-radius: 25px;
+        height: 50vw;
+        width: 60vw;
+      }
+    
+
+    .ath_description{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(29, 106, 154, 0.8);
+        color: #fff;
+        opacity: 0;
+        color: ivory;
+        visibility: hidden;
+        opacity: 0;
+        border-radius: 25px;
+        padding-top: 20%;
+    
+    
+      /* transition effect. not necessary */
+      transition: opacity .2s, visibility .2s;
+      }
+    
+    .button{
+        background: none;
+        border: 2px solid wheat;
+        border-radius: 25px;
+        padding: 10px;
+        color: wheat;
+        margin: 5px;
+        font-size: 2.5vw;
+        text-decoration: none;
+    }
+    
+    .font{
+        font-size: 3vw;
+    }
+    
+    .experience-flex{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ath{
+        /*background-color: rgb(34,139,34, 0.6) ;*/
+        background-color: rgb(0,0,0, 0.8);
+        position: absolute;
+        height: 50vw;
+        width: 60vw;
+        border-radius: 25px;
+        background-size: contain;
+    }
+    
+    .back_ath{
+      background-image: url("/athanasius.png");
+      margin-bottom: 10px;
+      margin-left: 10px;
+      position: relative;
+      width: 60vw;
+      height: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+    }
+    .back_walk{
+      background-image: url("/walk_in_hope.png");
+      margin-bottom: 10px;
+      margin-left: 10px;
+      position: relative;
+      width: 60vw;
+      height: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+    }
+    .back_sosl{
+      background-image: url("/sosl.png");
+      margin-bottom: 10px;
+      margin-left: 10px;
+      position: relative;
+      width: 60vw;
+      height: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+    }
+  
+    .back_ride{
+      background-image: url("/ride-for-life.png");
+      margin-bottom: 10px;
+      margin-left: 10px;
+      position: relative;
+      width: 60vw;
+      height: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+    }
+    .back_stellar{
+      background-image: url("/shf.png");
+      margin-bottom: 10px;
+      margin-left: 10px;
+      position: relative;
+      width: 60vw;
+      height: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+    }
+    .back_hidden{
+      background-image: url("/hidden_gems.png");
+      margin-bottom: 10px;
+      margin-left: 10px;
+      position: relative;
+      width: 60vw;
+      height: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+    }
+    .back_tictac{
+      background-image: url("/tic_tac.png");
+      margin-bottom: 10px;
+      margin-left: 10px;
+      position: relative;
+      width: 60vw;
+      height: 50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+    }
+    .back_mercy{
+      background-image: url("/divine.png");
+      margin-bottom: 10px;
+      margin-left: 10px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      background-repeat:no-repeat;
+      border-radius: 25px;
+      height: 50vw;
+      width: 60vw;
+    }
+  
+}
