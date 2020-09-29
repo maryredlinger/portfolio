@@ -1,6 +1,7 @@
 .about{
     align-items: center;
     text-align: center;
+    padding-bottom: 75px;
 }
 
 .that-font{
@@ -22,6 +23,33 @@
     align-items: center;
 }
 
-.text-container{
+@media only screen and (max-width: 1000px) {
+
+    .img-container{
+        width: 80%;
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container .before-text-container{
+            display: none;
+        }
+        .container .after-text-container{
+        width: 80%;
+       display: block;
+       color: black;
+    }
+}
+
+.before-text-container{
     width: 50%;
+    display: block;
+}
+
+.after-text-container{
+    display: none;
 }

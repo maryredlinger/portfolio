@@ -7,6 +7,8 @@
     padding-bottom: 25%;
     font-family: 'Inconsolata', monospace;
 }
+
+
 .blocks {
     border: 1px solid black;
     display: inline-block;
@@ -73,4 +75,5 @@
 .name-font{
     font-family: 'Indie Flower', cursive;
     text-align: center;
+    padding-top: 25px;
 }

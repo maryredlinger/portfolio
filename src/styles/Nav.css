@@ -3,7 +3,8 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 15px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     text-decoration: none;
     align-items: baseline;
     font-family: 'Inconsolata', monospace;

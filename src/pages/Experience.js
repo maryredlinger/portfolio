@@ -15,11 +15,11 @@ class Experience extends React.Component{
                 id : '',
                 experience: {
                     alert: {
-                        name: 'Alert Now',
-                        description: 'Supporting Families - Educating Children',
+                        name: 'Alert Now!',
+                        description: 'Dedicated emergency public communications program',
                         link:  null,
                         style: 'back_alert',
-                        github: null
+                        github: 'https://github.com/maryredlinger/cubed-app'
                     },
                     athanasius: {
                         name: 'Athanasius Academia',
@@ -118,17 +118,17 @@ class Experience extends React.Component{
                 <Nav />
             <div className="experience">
                 <div className="experience-container nav">
-                    <a onClick={this.javaScript}><img src='js-icon.png'></img></a>
-                    <a onClick={this.ruby}><img src='ruby-icon.png'></img></a>
-                    <a onClick={this.react}><img src='react-icon.png'></img></a>
-                    <a onClick={this.javaScript}><img src='node-icon.png'></img></a>
-                    <a onClick={this.javaScript}> <img src='rails-icon.png'></img></a>
-                    <a onClick={this.javaScript}> <img src='angular-icon.png'></img></a>
-                    <a onClick={this.javaScript}> <img src='mysql-icon.png'></img></a>
-                    <a onClick={this.javaScript}> <img src='postgres-icon.png'></img></a>
-                    <a onClick={this.javaScript}> <img src='wordpress-icon.png'></img></a>
-                    <a onClick={this.javaScript}><img src='css-icon.png'></img></a>
-                    <a onClick={this.openPopup}><img src='bootstrap-icon.png'></img></a>
+                    <img src='js-icon.png'></img>
+                    <img src='ruby-icon.png'></img>
+                    <img src='react-icon.png'></img>
+                    <img src='node-icon.png'></img>
+                     <img src='rails-icon.png'></img>
+                     <img src='angular-icon.png'></img>
+                     <img src='mysql-icon.png'></img>
+                     <img src='postgres-icon.png'></img>
+                     <img src='wordpress-icon.png'></img>
+                    <img src='css-icon.png'></img>
+                   <img src='bootstrap-icon.png'></img>
                 </div>
                 <div className="other show-flex" id="showCurrent">
                 </div>

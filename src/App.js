@@ -15,7 +15,7 @@ import SideProj from './pages/SideProj'
 
 function App() {
   return (
-    <div>
+    <div className="App">
         <Router>
           <Switch>
             <Route path="/" exact component={Home}/>

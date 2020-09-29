@@ -15,11 +15,17 @@ const About = () => {
                 <div className="img-container">
                     <img src="portfolio.jpg"></img>
                 </div>
-                <div className="text-container">
+                <div className="before-text-container">
                     <h1 className="name-font">Mary</h1>
                     <h4 className="that-font">Software Engineer / Web Developer / App Developer</h4>
                     <h4 className="that-font">Rock Climber / Corgi Enthusiast</h4>
                 </div>
+                <div className="after-text-container">
+                    <h1 className="name-font">Mary</h1>
+                    <h4 className="that-font">Software Engineer / Web Developer / App Developer</h4>
+                    <h4 className="that-font">Rock Climber / Corgi Enthusiast</h4>
+                </div>
+
             </div>
         </div>
     )
