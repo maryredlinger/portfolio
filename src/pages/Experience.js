@@ -14,6 +14,13 @@ class Experience extends React.Component{
             this.state = {
                 id : '',
                 experience: {
+                    etsy: {
+                        name: 'Got Mary?',
+                        description: 'Got Mary? She\'\s Got Your Back',
+                        link:  'https://www.etsy.com/shop/gotmary',
+                        style: 'back_etsy',
+                        github: null
+                    },
                     alert: {
                         name: 'Alert Now!',
                         description: 'Dedicated emergency public communications program',
@@ -115,24 +122,29 @@ class Experience extends React.Component{
         console.log(experience)
         return(
             <div>
-                <Nav />
+                <Nav/>
             <div className="experience">
                 <div className="experience-container nav">
-                    <img src='js-icon.png'></img>
-                    <img src='ruby-icon.png'></img>
-                    <img src='react-icon.png'></img>
-                    <img src='node-icon.png'></img>
-                     <img src='rails-icon.png'></img>
-                     <img src='angular-icon.png'></img>
-                     <img src='mysql-icon.png'></img>
-                     <img src='postgres-icon.png'></img>
-                     <img src='wordpress-icon.png'></img>
-                    <img src='css-icon.png'></img>
-                   <img src='bootstrap-icon.png'></img>
+                    <div className="flex-item"><img src='js-icon.png'></img></div>
+                    <div className="flex-item"><img src='ruby-icon.png'></img></div>
+                    <div className="flex-item"><img src='react-icon.png'></img></div>
+                    <div className="flex-item"><img src='node-icon.png'></img></div>
+                    <div className="flex-item"> <img src='rails-icon.png'></img></div>
+                    <div className="flex-item"> <img src='angular-icon.png'></img></div>
+                    <div className="flex-item"> <img src='mysql-icon.png'></img></div>
+                    <div className="flex-item"> <img src='postgres-icon.png'></img></div>
+                    <div className="flex-item"> <img src='wordpress-icon.png'></img></div>
+                    <div className="flex-item">  <img src='css-icon.png'></img></div>
+                    <div className="flex-item">  <img src='bootstrap-icon.png'></img></div>
                 </div>
                 <div className="other show-flex" id="showCurrent">
                 </div>
                 <hr />
+                <div className="top-text">
+                <h1 className=" h1">My Recent Work</h1>
+                <br/>
+                <h3 className="that-font">Here are a few projects I've worked on recently. Want to learn more? <a href="/contact">Email Me.</a></h3>
+                </div>
                 <div className="experience-flex">
                     {Object.keys(experience).map((exp, index) => {
                         return(

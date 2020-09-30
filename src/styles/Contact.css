@@ -1,0 +1,33 @@
+.contact-form{
+    text-align: left;
+    font-size: 3vw;
+    margin-left: 10%
+}
+
+textarea{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    text-decoration: none;
+}
+.input{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+label{
+    color: black;
+    width: 500px
+}
+.send-button{
+    background-color: black;
+    color: black;
+}
+.send-button:hover{
+    background-color: #4C9A2A;;
+}

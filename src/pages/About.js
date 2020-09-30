@@ -6,6 +6,9 @@ import {Link} from 'react-router-dom'
 
 import Nav from './NavBar'
 
+import Experience from './Experience.js'
+import Contact from './Contact.js'
+
 const About = () => {
 
     return(
