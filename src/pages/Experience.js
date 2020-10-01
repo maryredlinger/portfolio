@@ -122,6 +122,7 @@ class Experience extends React.Component{
         console.log(experience)
         return(
             <div>
+                <Nav/>
             <div className="experience">
                 <div className="experience-container nav">
                     <div className="flex-item"><img src='js-icon.png'></img></div>
