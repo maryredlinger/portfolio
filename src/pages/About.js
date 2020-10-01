@@ -14,7 +14,7 @@ const About = () => {
     return(
         <div className="about">
             <Nav />
-            <div className="container">
+            <div className="container item">
                 <div className="img-container">
                     <img src="portfolio.jpg"></img>
                 </div>
@@ -30,6 +30,13 @@ const About = () => {
                 </div>
 
             </div>
+            <div className="item">
+                <Experience />
+            </div>
+            <div className="item">
+                <Contact />
+            </div>
+
         </div>
     )
 }

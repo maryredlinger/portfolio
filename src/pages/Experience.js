@@ -122,7 +122,6 @@ class Experience extends React.Component{
         console.log(experience)
         return(
             <div>
-                <Nav/>
             <div className="experience">
                 <div className="experience-container nav">
                     <div className="flex-item"><img src='js-icon.png'></img></div>
@@ -141,7 +140,7 @@ class Experience extends React.Component{
                 </div>
                 <hr />
                 <div className="top-text">
-                <h1 className=" h1">My Recent Work</h1>
+                <h1 className="h1">My Recent Work</h1>
                 <br/>
                 <h3 className="that-font">Here are a few projects I've worked on recently. Want to learn more? <a href="/contact">Email Me.</a></h3>
                 </div>
