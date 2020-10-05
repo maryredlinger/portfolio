@@ -1,11 +1,17 @@
 .about{
     align-items: center;
     text-align: center;
+    padding-top: 25px;
     padding-bottom: 75px;
 }
 
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 .that-font{
-    font-family: 'Inconsolata', monospace;
 }
 
 .about img{
@@ -22,8 +28,15 @@
     flex-wrap: wrap;
     align-items: center;
 }
+@media only screen and (max-width: 1000px){
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-@media only screen and (max-width: 1000px) {
+}
+@media only screen and (max-width: 1250px) {
 
     .img-container{
         width: 80%;

@@ -1,16 +1,39 @@
 .navigation {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 10px;
     text-decoration: none;
     align-items: baseline;
-    font-family: 'Inconsolata', monospace;
 
   }
 
-  .nav-current{
-      font-size: 25px;
+
+
+  .nav-item{
+      padding: 20px;
+      width: 150px;
+      text-align: left;
+
   }
+
+  .verticalLine {
+    border-right: thick solid gray;
+  }
+
+  @media only screen and (max-width: 1000px) {
+  
+      .navigation{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        align-items: baseline;
+      }
+
+  }
+

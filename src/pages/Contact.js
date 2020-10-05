@@ -17,7 +17,7 @@ const Contact = () => {
           });
       }
     return(
-        <div className="about">
+        <div className="about flex">
             <Nav />
  
         <form className="contact-form" onSubmit={sendEmail}>

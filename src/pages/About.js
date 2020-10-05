@@ -12,7 +12,7 @@ import Contact from './Contact.js'
 const About = () => {
 
     return(
-        <div className="about">
+        <div className="about flex">
             <Nav />
             <div className="container">
                 <div className="img-container">

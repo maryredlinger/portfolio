@@ -15,6 +15,7 @@ class SideProj extends React.Component {
             fontSize: '',
             title: 'Your Title',
             body: 'Your Body of Text',
+            body2: 'Hello WOrld',
             font: ''
         }
     }
@@ -49,6 +50,15 @@ class SideProj extends React.Component {
         console.log(e.target.id)
     }
 
+    addTextBox(){
+        //var body = this.state.body2
+        var element = document.createElement("textarea")
+        element.setAttribute("value", `${this.state.body2}`);
+        //element.setAttribute("onChange", this.setBody.bind(this))
+        var newText = document.getElementById("newText");
+
+        newText.appendChild(element);
+    }
 
     handleSubmit(event){
         event.preventDefault()
@@ -65,6 +75,11 @@ class SideProj extends React.Component {
                         <input id="title" onChange={this.setTitle.bind(this)} value={this.state.title}  className=""  /><br/>
                         <label>Body</label>
                         <textarea className=""  onChange={this.setBody.bind(this)} value={this.state.body} name="body" /><br/>
+                        <br/>
+                        <span id="newText">&nbsp;</span>
+                        <br/>
+                        <label>Add TextBox</label>
+                        <input onClick={this.addTextBox}  type="submit"/>
                         <br/>
                         <label>Background Color</label>
                         <div className="selectFlex">

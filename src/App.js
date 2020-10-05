@@ -16,10 +16,10 @@ import SideProj from './pages/SideProj'
 function App() {
   return (
     <div className="App">
+
         <Router>
           <Switch>
-            <Route path="/" exact component={Home}/>
-            <Route path="/about" exact component={About}/>
+            <Route path="/" exact component={About}/>
             <Route path="/contact" exact component={Contact}/>
             <Route path="/experience" exact component={Experience}/>
             <Route path="/side-projects" exact component={SideProj}/>
