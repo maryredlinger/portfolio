@@ -6,16 +6,15 @@
     padding: 10px;
     text-decoration: none;
     align-items: baseline;
-
   }
-
-
-
+  .nav-back{
+    background-color: rgb(211,211,211, 0.5);
+    min-height: calc(100vh)
+  }
   .nav-item{
       padding: 20px;
       width: 150px;
       text-align: left;
-
   }
 
   .verticalLine {
@@ -23,16 +22,22 @@
   }
 
   @media only screen and (max-width: 1000px) {
+    .nav-back{
+        background-color: white;
+        min-height: auto;
+      }
+    
+    .nav-item{
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+    }
   
       .navigation{
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-around;
-        padding: 10px;
         text-decoration: none;
-        text-align: center;
-        align-items: baseline;
       }
 
   }

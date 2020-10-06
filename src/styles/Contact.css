@@ -1,7 +1,38 @@
 .contact-form{
-    text-align: left;
-    font-size: 3vw;
-    margin-left: 10%
+    text-align: right;
+    width: 60%;
+}
+
+.shove{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container h3{
+    font-weight: lighter;
+}
+
+.contact-imgs{
+    display: flex;
+    flex-direction: row;
+}
+
+.rotate{
+    writing-mode:vertical-rl;
+    color: grey;
+    font-weight: lighter;
+    font-size: 1.5vw;
+}
+
+.contact-imgs img{
+    width: 25vw;
+    height: 25vw;
 }
 
 textarea{
@@ -9,7 +40,7 @@ textarea{
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    width: 300px;
+    width: 75%;
     text-decoration: none;
 }
 .input{
@@ -33,7 +64,70 @@ label{
     margin: 5px;
     font-size: 1.5vw;
     text-decoration: none;
+    align-items: center;
 }
 .send-button:hover{
-    background-color: #4C9A2A;;
+    background-color: rgb(76, 154, 42, 0.8);
+}
+
+.contact-items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-contact{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-items a{
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .contact-items a{
+        text-decoration: none;
+        color: rgb(59, 59, 59);
+        font-size: 1.5vw;
+
+    }
+    
+    .contact-imgs{
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+    }
+    
+    .contact-imgs img{
+        width: 30vw;
+        height: 30vw;
+    }
+    textarea{
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .contact-form{
+        text-align: right;
+        width: 100%;
+    
+    }
+
+    .flex-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    
 }

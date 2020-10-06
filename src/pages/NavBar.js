@@ -36,7 +36,7 @@ class NavBar extends React.Component{
         console.log("here", window.location.pathname )
 
         return(
-            <div className="navigation">
+            <div className="nav-back navigation">
                 {this.currentNav()}
                 <div className="verticalLine"></div>
             </div>
