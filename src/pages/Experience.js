@@ -188,7 +188,7 @@ class Experience extends React.Component{
                             <div className="ath font">
                                 <h2 className="ath_initial">{experience[exp].name}</h2>
                                 <div className="ath_description">
-                                    <h3 className="description">{experience[exp].description}</h3>
+                                    <h3 alt={experience[exp].name} className="description">{experience[exp].description}</h3>
                                 {experience[exp].link !== null && 
 
                                 <a className="exp-button" target="_blank" href={experience[exp].link}>Visit Website →</a>
@@ -198,7 +198,7 @@ class Experience extends React.Component{
                                 }
                                 <div className="icon-container">
                                 {experience[exp].language !== null && 
-                                    <img src={experience[exp].language} className="language-icon"></img>
+                                    <img  src={experience[exp].language} className="language-icon"></img>
                                 }  
                                 {experience[exp].framework !== null && 
                                     <img src={experience[exp].framework} className="language-icon"></img>

@@ -6,6 +6,7 @@ import '../styles/Contact.css'
 import Nav from './NavBar'
 
 const Contact = () => {
+
     function sendEmail(e) {
         e.preventDefault();
     
@@ -20,44 +21,52 @@ const Contact = () => {
         <div className="about flex">
             <Nav />
         <div className="contact-container">
-            <div className="contact-imgs">
+            {/*<div className="contact-imgs">
                 <img src='darcy2.jpg'></img>
                 <img src='darcy3.jpg'></img>
                 <img src='darcy1.jpg'></img>
                 <h4 className="rotate">No corgis were harmed</h4>
-            </div>
-            <div className="flex-contact">
+    </div>*/}
+            <form className="my-form" onSubmit={sendEmail}>
+                <div className="container">
+                    <h1>Get in touch!</h1>
+                    <ul>
+                    <li>
+                        <div className="grid grid-2">
+                        <input type="text" placeholder="Name" name="user_name" required/>  
+                        <input type="text" placeholder="Email" name="user_email" required/>
+                        </div>
+                    </li>
+                    <li>
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </li>   
+                    <li>
+                        <div className="grid grid-3">
+                        <div className="required-msg">REQUIRED FIELDS</div>
+                        <button className="btn-grid" type="submit" >
+                            <span className="back">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt=""></img>
+                            </span>
+                            <span className="front" type="submit" value="Send">SUBMIT</span>
+                        </button>
+                        <button className="btn-grid" type="reset" >
+                            <span className="back">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt=""></img>
+                            </span>
+                            <span className="front">RESET</span>
+                        </button> 
+                        </div>
+                    </li>    
+                    </ul>
+                </div>
+                </form>
+
+
             <div className="contact-items">
-                <div>
 
-                <h3>Email</h3>
-                <h3><a href="mailto:maryredlinger.dev@gmail.com?subject=Coming from your site">maryredlinger.dev@gmail.com</a></h3>
-                </div>
-                <div>
-
-                <h3>Linkedin</h3>
-                <h3><a href="https://www.linkedin.com/maryredlinger">www.linkedin.com/maryredlinger</a></h3>
-                </div>
-                <div>
-
-                <h3>Github</h3>
-                <h3><a href="https://github.com/maryredlinger">www.github.com/maryredlinger</a></h3>
-                </div>
-            </div>
-            
-            <form className="contact-form" onSubmit={sendEmail}>
-                <div className="shove">
-                <h3>Name</h3>
-                <input className="input" type="text" name="user_name" /><br/>
-                <h3>Email</h3>
-                <input className="input" type="email" name="user_email" /><br/>
-                </div>
-                <div className="shove">
-                <h3>Message</h3>
-                <textarea name="message" /><br/>
-                </div>
-                <input className="send-button" type="submit" value="Send" />
-            </form>
+                <a target="_blank" href="https://www.linkedin.com/maryredlinger"><img src="linkeding-ps.jpg"></img></a>
+                <a href="mailto:maryredlinger.dev@gmail.com?subject=Coming from your site"><img src="email-ps.jpg"></img></a>
+                <a href="https://github.com/maryredlinger" target ="_blank"><img src="github.jpg"></img></a>
             </div>
         </div>
 

@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Link } from 'react-router-dom';
 
+import Ham from "./Hamburger.js"
+
 class NavBar extends React.Component{
     currentNav(){
         const pathname = window.location.pathname
@@ -31,15 +33,23 @@ class NavBar extends React.Component{
             )
         } 
     }
+
+    
     render(){
         console.log(this.currentNav())
         console.log("here", window.location.pathname )
 
         return(
-            <div className="nav-back navigation">
-                {this.currentNav()}
-                <div className="verticalLine"></div>
+            <div>
+                <div className="nav-back navigation">
+                    {this.currentNav()}
+                </div>
+
+                    <div className="verticalLine"></div>
+                    <div className="show-ham"><Ham /></div>
+
             </div>
+
 
         )
     }
