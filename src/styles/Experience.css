@@ -1,9 +1,13 @@
 .experience{
     align-items: center;
     text-align: center;
-    padding-bottom: 75px;
+    padding-top: 25px;
+    padding-bottom: 50px;
 }
 
+.padding-top{
+    padding-top: 25px;
+}
 .experience h1{
     font-size: 3vw;
 }
@@ -12,6 +16,15 @@
     max-width: 7vw;
     max-height: auto;
 }
+
+.flex-item {
+    flex: 1;
+    transition: all 1.5s ease;
+}
+.flex-item:hover {
+    flex-grow: 11;
+}
+
 
 
 .other img{
@@ -54,7 +67,6 @@
     padding-left: 10px;
     padding-right: 10px;
     margin: 5px 5px 5px 5px;
-   font-family: 'Indie Flower', cursive;
 }
 
 .boxPopup {
@@ -113,7 +125,7 @@
 
   .ath{
       /*background-color: rgb(34,139,34, 0.6) ;*/
-      background-color: rgb(0,0,0, 0.8);
+      background-color: rgb(0,0,0, 0.6);
       position: absolute;
       height: 20vw;
       width: 25vw;
@@ -207,7 +219,7 @@
     border-radius: 25px;
   }
   .back_tictac{
-    background-image: url("/tic_tac.png");
+    background-image: url("/tic-tac-toe.gif");
     margin-bottom: 10px;
     margin-left: 10px;
     position: relative;
@@ -248,6 +260,21 @@
     height: 20vw;
     width: 25vw;
   }
+  .back_etsy{
+    background-image: url("/etsy.gif");
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+    height: 20vw;
+    width: 25vw;
+  }
+
 
 * {
   margin: 0;
@@ -291,7 +318,7 @@
 .description{
     padding-bottom: 15px;
 }
-.button{
+.exp-button{
     background: none;
     border: 2px solid wheat;
     border-radius: 25px;
@@ -300,6 +327,10 @@
     margin: 5px;
     font-size: 1vw;
     text-decoration: none;
+}
+
+.exp-button:hover{
+    background-color: rgb(29, 106, 154);
 }
 .ath:hover .ath_button{
     visibility: visible;
@@ -311,8 +342,42 @@
 .font{
     font-size: 1.8vw;
 }
+.top-text{
+    margin: 40px 100px 100px 100px;
+}
+.top-text a{
+    color: green;
+    text-decoration: none;
+}
 
+.h1{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 7vw;
+}
+
+.language-icon{
+    width: 2vw;
+    height: 2vw;
+}
+
+.icon-container{
+    padding-top: 10%;
+}
 @media only screen and (max-width: 550px) {
+
+    .language-icon{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .h1 {
+        font-size: 9vw;
+    }
+    .top-text{
+        margin: 10px 50px 50px 10px;
+    }
+    
 
     .back_alert{
         background-image: url("/alert.gif");
@@ -350,7 +415,7 @@
       transition: opacity .2s, visibility .2s;
       }
     
-    .button{
+    .exp-button{
         background: none;
         border: 2px solid wheat;
         border-radius: 25px;
@@ -466,7 +531,7 @@
       border-radius: 25px;
     }
     .back_tictac{
-      background-image: url("/tic_tac.png");
+      background-image: url("/tic-tac-toe.gif");
       margin-bottom: 10px;
       margin-left: 10px;
       position: relative;
@@ -493,5 +558,20 @@
       height: 50vw;
       width: 60vw;
     }
+    .back_etsy{
+        background-image: url("/etsy.gif");
+        margin-bottom: 10px;
+        margin-left: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+        background-repeat:no-repeat;
+        border-radius: 25px;
+        height: 50vw;
+        width: 60vw;
+      }
+  
   
 }

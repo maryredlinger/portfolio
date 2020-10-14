@@ -1,0 +1,88 @@
+
+.containerR{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+
+.editContainer{
+    width: 50%;
+}
+
+.displayContainer{
+    width: 50%;
+}
+
+.displayContainer p{
+    height: 500px;
+}
+
+.red{
+    background-color: red;
+    width: 100%;
+}
+
+.blue{
+    background-color: blue;
+    width: 100%;
+}
+
+.burlywood{
+    background-color: burlywood;
+    width: 100%;
+}
+
+.green{
+    background-color: green;
+    width: 100%;
+}
+
+.font-black{
+    color: black
+}
+
+.black{
+    background-color: black;
+}
+
+.font-blue{
+    color: blue
+}
+
+.font-green{
+    color: green
+}
+
+.font-white{
+    color: white
+}
+
+.selectFlex{
+    display: flex;
+    flex-grow: 4;
+}
+
+.selectBox{
+    width: 25px;
+    height: 25px;
+    border: 2px solid black;
+}
+
+.selectBoxFont{
+    height: auto;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.incosolata{
+    font-family: 'Inconsolata', monospace;
+}
+
+.indieFlower{
+    font-family: 'Indie Flower', cursive;
+}
+
+.allura{
+    font-family: 'Allura', cursive;
+}

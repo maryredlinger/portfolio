@@ -6,10 +6,13 @@ import {Link} from 'react-router-dom'
 
 import Nav from './NavBar'
 
+import Experience from './Experience.js'
+import Contact from './Contact.js'
+
 const About = () => {
 
     return(
-        <div className="about">
+        <div className="about flex">
             <Nav />
             <div className="container">
                 <div className="img-container">
@@ -17,12 +20,12 @@ const About = () => {
                 </div>
                 <div className="before-text-container">
                     <h1 className="name-font">Mary</h1>
-                    <h4 className="that-font">Software Engineer / Web Developer / App Developer</h4>
+                    <h4 className="that-font">Software Engineer / Web Developer / Mobile Developer</h4>
                     <h4 className="that-font">Rock Climber / Corgi Enthusiast</h4>
                 </div>
                 <div className="after-text-container">
                     <h1 className="name-font">Mary</h1>
-                    <h4 className="that-font">Software Engineer / Web Developer / App Developer</h4>
+                    <h4 className="that-font">Software Engineer / Web Developer / Mobile Developer</h4>
                     <h4 className="that-font">Rock Climber / Corgi Enthusiast</h4>
                 </div>
 
